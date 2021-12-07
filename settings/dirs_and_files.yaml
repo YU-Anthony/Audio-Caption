@@ -1,0 +1,40 @@
+# =================================
+# Settings for file structure.
+#
+# author: Konstantinos Drossos
+# affiliation: Tampere University
+# =================================
+root_dirs:
+  outputs: 'data2/nfs/users/s_zhangyu/multimodal/dcase_CNN/outputs'
+  data: '/data2/nfs/users/s_zhangyu/multimodal/dcase_CNN/data'
+# -----------------------------------
+dataset:
+  development: &dev 'development'
+  evaluation: &eva 'evaluation'
+  features_dirs:
+    output: 'data_splits'
+    development: *dev
+    evaluation: *eva
+  audio_dirs:
+    downloaded: '/home/zhangyu/multimodal/dcase-2020-baseline/data/clotho_audio_files'
+    output: '/data2/nfs/users/s_zhangyu/multimodal/dcase_CNN/data/data_splits_audio'
+    development: *dev
+    evaluation: *eva
+  annotations_dir: '/home/zhangyu/multimodal/dcase-2020-baseline/data/clotho_csv_files'
+  pickle_files_dir: 'pickles'
+  files:
+    np_file_name_template: 'clotho_file_{audio_file_name}_{caption_index}.npy'
+    words_list_file_name: 'words_list.p'
+    words_counter_file_name: 'words_frequencies.p'
+    characters_list_file_name: 'characters_list.p'
+    characters_frequencies_file_name: 'characters_frequencies.p'
+# -----------------------------------
+model:
+  model_dir: 'models'
+  checkpoint_model_name: 'dcase_model_baseline.pt'
+  pre_trained_model_name: 'dcase_model_baseline_pre_trained.pt'
+# -----------------------------------
+logging:
+  logger_dir: 'logging'
+  caption_logger_file: 'captions_baseline.txt'
+# EOF
