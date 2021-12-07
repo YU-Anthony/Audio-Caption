@@ -9,7 +9,7 @@ To set-up the code, you have to do the following:
 
 Firstly, use the following command to clone this repository at your terminal:
 ```bash
-$ git clone git@github.com:audio-captioning/dacse-2020-baseline.git
+$ git clone git@github.com:YU-Anthony/Audio-Caption.git
 ```
 The, create a new conda environment
 
@@ -27,4 +27,9 @@ pip install -r requirements.txt
 ## 2. Run the demo
 You just need to run the `demo.ipynb` to run the project. This file used `Gradio` framework to build a easy demo to display the power of your model.
 ![image](https://user-images.githubusercontent.com/57721340/144982917-fe7ec62d-f8a2-439a-b468-d77ebd682495.png)
+
+You can easily drag a audio file to this demo and after several seconds you will get the description of this audio file.
+![image](https://user-images.githubusercontent.com/57721340/144983307-3573dcca-0dd1-404a-825d-855461992d85.png)
+
+Enjoy it!!!
 
